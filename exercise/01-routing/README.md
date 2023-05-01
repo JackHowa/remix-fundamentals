@@ -2,6 +2,19 @@
 
 ## 📝 Notes
 
+File name conventions seem to be more common. Looks like the update that I was
+thinking of is based off of structure being flat in v2 rather than nested in v1
+https://remix.run/docs/en/1.15.0/pages/v2#upgrading-to-the-new-convention
+
+> Every Remix app starts with a root route found in `app/root.tsx`. This will
+> render an `<Outlet />` component which determines where the direct children
+> go. If those child routes have child routes of their own then they will also
+> render an `<Outlet />`, but we'll get into that in more detail later.
+
+This seems to be similar to children in react and yield in ember.
+
+Use the `<Link/>` component rather than the a tag to avoid a full page reload.
+
 ## 🤓 Background
 
 Almost everything with a URL has routing requirements. Whether it's a web app,
